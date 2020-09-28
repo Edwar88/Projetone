@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Testando "123"</title>
+<meta charset="utf-8">
+
+</head>
+<body>
+
+<script type="text/javascript">
+      document.write("Eduardo");
+      //DOCUMENT.WRITE = Serve para imprimir no browser!
+      alert("Ola seja bem vindo ! ! !")
+     //"alert" = cria uma caixa de dialogo!
+</script>
+<script>
+	    function func01(){
+		//Funçao e nome da funçao
+		var x = "Amor?";
+		//varivel local = fica apenas dentro da funçao que foi escreta!
+
+		y = "Te amo muito"; 
+		//variavel global = em todo codigo ela vai aparecer!
+
+		alert(x);
+		alert(y);
+	};
+	func01();
+	// Logo apos escrever o codigo tem que charmar a funçao escrita se nao ela nao aparecera!
+
+	function func02(){
+		
+		alert(y);//acessivel = global
+		alert(x);//não acessivel = local
+	};
+	func02();
+</script>
+<script> 
+
+//operador "typeof" = para descobrir o tipo de variavel como no exemplo abaixo:
+
+var a="tv",b="mesa",c="Água",d=true,e;
+document.write(" a é " + typeof a+ "<br/>") 
+document.write(" b é " + typeof b+ "<br/>") 
+document.write(" c é " + typeof c+ "<br/>") 
+document.write(" d é " + typeof d+ "<br/>") 
+document.write(" e é " + typeof e+ "<br/>") 
+
+
+/*Método*/  alert("Bom dia! ! !"),
+	         alert("Sou um programador \n de primeira!")
+	         // \n = significa que em um determinado ponto do codigo ele vai me dar uma quebra de linha!
+
+	// alert = Abre uma caixa de dialogo para o usúario,podendo colocar tanto "strings"ou variaveis!
+
+	/*Método*/  prompt("arg01","arg02")
+	// É uma caixa de dialogo para entrada de dados,como digite seu nome e sobrenome por exemplo.
+	//Sempre em aspas pois se trata de "strings"! ! !
+
+	/*Método*/ - confirm("mensagem")
+	    var mensagem;
+	    var retorno = confirm("Clique em um dos botões");
+	    if (retorno == true)
+	    {
+	    	mensagem = "Operação confirmada!";
+	    }
+	    else
+	    {
+	    	mensagem = "Você cancelou a operaçao";
+	    }
+	    document.write(mensagem);
+	/* comfirm() = retorna um valor booleano se o usuario clicar em ok retorna 
+	um valor mas se canselar retorna outro valor!
+</script>
+<script>
+	/*trabalhando com constantes!*/
+	const PERIODO=12;
+	/*const e a palavra reservada a constante em javascript*/
+
+	/*exemplo de constantes*/
+	var nome;
+	const PERIODO = 10;
+	nome = prompt("Digite seu nome");
+	alert(nome + ",o período é constante com valor" + PERIODO);
+	/*CONSTANTES = SAO OS VALORES QUE NUMK IRAO MUDAR EM TODO O CODIGO SE MUDAR EM ALGUM PONTO ELE NAO VAI FUNCIONAR*/
+</script>
+
+
+</body>
+</html>
